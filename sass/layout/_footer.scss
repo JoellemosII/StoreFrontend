@@ -1,0 +1,44 @@
+.contenedor{
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.footer{
+    background-color: #74C3EF;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    h2{
+        font-size: 1.6rem;
+    }
+    a{
+        text-decoration: none;
+        color: #1c1c1c;
+        cursor: pointer;
+        font-size: 1.5rem;
+        }
+    
+}
+
+.div-a, .div-b, .div-c{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-d{
+    text-align: center;
+    align-items: center;
+    padding-top: 6px;
+    img{
+        padding:3px ;
+    }
+    p{font-size: 1.6rem;}
+}
+
+.iconos{
+    width: 25px;
+    height:25px ;
+}

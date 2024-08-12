@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./css/burger.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <header>
+                <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+                <img class="logo" src="./img/Iconos/logo.png">
+                <nav class="nav" id="nav">
+                    <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                    <ul class="nav-list">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="./html/kids.html">Kids</a></li>
+                        <li><a href="./html/adultos.html">Adultos</a></li>
+                        <li><a href="./html/gift-card.html">Gift Card</a></li>
+                    </ul>
+                </nav>
+                <div class="conteiner">
+                    <nav id="carrito">
+                        <i class="bi bi-bag">
+                            <div class="buy-card">
+                                <ul class="nav-card">
+                                    <li>Imagen</li>
+                                    <li>Nombre</li>
+                                    <li>Precio</li>
+                                    <li>Cantidad</li>
+                                    <li></li>
+                                </ul>
+                                <div class="lista-de-productos">
+                                    
+                                </div>
+                                <button id="vaciar-carrito">Vaciar Carrito</button>
+                                <button>Finalizar Compra</button>
+                            </div>
+                        </i>
+                    </nav>
+                </div>
+            </header>
+            <main class="grid" id="lista-producto">
+                <div class="item">
+                    <h3>Remera React</h3>
+                    <a href="./html/remera-react.html"><img class="imagenes" src="./img/Inicio/react.jpg"></a>
+                    <p class="price"> $105.99</p>
+                    <button class="agregar-carrito" data-id="1">Agregar Al Carrito</button>
+                </div>
+                <div class="item">
+                    <h3 >Remera JS</h3>
+                    <a  href="./html/remera-js.html"><img class="imagenes" src="./img/Inicio/js.jpg"></a>
+                    <p class="price">$105.99</p>
+                    <button class="agregar-carrito" data-id="2">Agregar Al Carrito</button>
+                </div>
+                <div class="item">
+                    <h3 >Remera Html</h3>
+                    <a href="./html/remera-html.html"><img class="imagenes" src="./img/Inicio/html.jpg"></a>
+                    <p class="price">$105.99</p>
+                    <button class="agregar-carrito" data-id="3">Agregar Al Carrito</button>
+                </div>
+                <div class="item">
+                    <h3>Remera Git</h3>
+                    <a href="./html/remera-git.html"><img class="imagenes" src="./img/Inicio/git.jpg"></a>
+                    <p class="price">$105.99</p>
+                    <button class="agregar-carrito" data-id="4">Agregar Al Carrito</button>
+                </div>
+                <div class="item">
+                    <h3 >Remera TS</h3>
+                    <a href="./html/remera-ts.html"><img class="imagenes" src="./img/Inicio/ts.jpg"></a>
+                    <p class="price">$105.99</p>
+                    <button class="agregar-carrito" data-id="5">Agregar Al Carrito</button>
+                </div>
+                <div class="item">
+                    <h3 >Remera Vue</h3>
+                    <a href="./html/remera-vue.html"><img class="imagenes" src="./img/Inicio/vue.jpg"></a>
+                    <p class="price">$105.99</p>
+                    <button class="agregar-carrito" data-id="6">Agregar Al Carrito</button>
+                </div>
+                <div class="item">
+                    <h3 >Remera Node</h3>
+                    <a href="./html/remera-node.html"><img class="imagenes" src="./img/Inicio/node.jpg"></a>
+                    <p class="price">$105.99</p>
+                    <button class="agregar-carrito" data-id="7">Agregar Al Carrito</button>
+                </div>
+                <div class="item">
+                    <h3 >Remera Sass</h3>
+                    <a href="./html/remera-sass.html"><img class="imagenes" src="./img/Inicio/sass.jpg"></a>
+                    <p class="price">$105.99</p>
+                    <button class="agregar-carrito" datda-id="8">Agregar Al Carrito</button>
+                </div>
+                <div class="item">
+                    <h3>Remera Drupal</h3>
+                    <a href="./html/remera-drupal.html"><img class="imagenes" src="./img/Inicio/drupal.jpg"></a>
+                    <p class="price">$105.99</p>
+                    <button class="agregar-carrito" data-id="9">Agregar Al Carrito</button>
+                </div>
+            </main>
+                <footer class="footer">
+                    <div class="div-a">
+                        <h2>Sobre la Empresa</h2>
+                        <a href="./html/nosotros.html">Sobre Nosotros</a>
+                        <a href="./html/terminos.html">Terminos y Condiciones</a>
+                        <a href="./html/politica.html">Politica de privacidad</a>
+                    </div>
+                    <div class="div-b">
+                        <h2>Ayuda</h2>
+                        <a href="./html/envio.html">Costos de envios</a>
+                        <a href="./html/pago.html">Medios de pago</a>
+                        <a href="./html/talles.html">¿Cual es mi talle?</a>
+                    </div>
+                    <div class="div-c">
+                        <h2>Contactanos</h2>
+                        <a href="mailto:joel94master@gmail.com" target="_blank"><img class="iconos" src="./img/Iconos/correo-electronico.png" alt="correo electronico">Por Email</a>
+                        <a href="wa.link/836hj1" target="_blank"><img class="iconos" src="./img/Iconos/whatsapp.png" alt="whatsapp">Por Whatsapp</a>
+                    </div>
+                    <div class="div-d">
+                        <h2>Seguinos</h2>
+                        <img class="iconos" src="./img/Iconos/tik-tok.png" alt="Tik Tok">
+                        <img class="iconos" src="./img/Iconos/facebook.png" alt="Faebook">
+                        <img class="iconos" src="./img/Iconos/instagram.png" alt="Instagram">
+                        <img class="iconos" src="./img/Iconos/gorjeo.png" alt="Twitter">
+                        <p>@StoreFrontend</p>
+                    </div>
+                </footer>
+        </div> 
+        <script src="./js/hamburguesa.js"></script>
+        <script src="./js/carrito.js"></script>
+    </body>
+</html>

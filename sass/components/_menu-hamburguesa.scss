@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #74C3EF;
+}
+.logo{
+    max-width: 6rem;}
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    li a{
+        text-decoration: none;
+        color:#1c1c1c ;
+        font-size: 1.5rem;
+        &:hover{background-color: #dcf256;}
+    }
+}
+.abrir-menu ,
+.cerrar-menu{display: none;}

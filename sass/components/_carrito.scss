@@ -1,0 +1,85 @@
+.conteiner nav{
+    display: flex;
+    justify-content: end;
+    font-size: 2.5rem;
+    cursor: pointer;
+    button{
+    display: none;
+    }
+}
+.conteiner nav i:hover> .buy-card{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+}
+.conteiner nav i:hover .buy-card >button{
+    display: block;
+    width: 90%;
+    padding: 1rem;
+    margin: 10px auto;
+    background-color: transparent;
+    border: solid thin #e1e1e1;
+    cursor: pointer;
+    color: #1e1e1e;
+}
+.conteiner nav i:hover .buy-card >button:hover{
+    border: solid thin #1e1e1e;
+    transition: all .5s;
+
+}
+.conteiner nav i:hover .nav-card{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+    border: solid thin #fff;
+}
+.nav-card{
+    display: none;
+    li{
+        list-style: none;
+        padding: 1rem;
+        font-weight: bold;
+        &:nth-child(2){
+        padding-left: 32px;
+        }
+        &:nth-child(3){
+        padding-right: 9px;
+        }
+        &:nth-child(4){
+        padding-right: 46px;
+        }
+    }
+}
+
+.lista-de-productos div{
+    display: none;
+    text-align: center;
+    padding: 10px 0 0 0 ;
+    border-top: solid thin #e1e1e1;
+    p{
+        /*border: solid thin red;*/
+        width: 300px;
+        font-size: 1.2rem;
+        &:nth-child(4){
+            padding-left: 6px;
+        }
+        &:last-child span{
+            background-color: red;
+            border-radius:50%;
+            padding: 5px 10px;
+            color: #fff;
+            
+        }
+    }
+    img{
+        width: 100px;
+    }
+}
+
+.conteiner nav i:hover .buy-card >.lista-de-productos div{
+    display: flex;
+
+}

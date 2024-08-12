@@ -1,0 +1,47 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,280px));
+    margin: auto;
+    justify-content: center;
+    max-width: 1100px;
+    gap: 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.item{
+    
+    border:solid thin #e1e1e1;
+    border-radius: 5px;
+    img{
+        width: 100%;
+        height: 270px;
+    }
+}
+.price{
+    padding: 6px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.agregar-carrito{
+    padding: 1rem;
+    width: 100%;
+    background-color:#74C3EF;
+    border:none;
+    outline: none;
+    text-transform: uppercase;
+    color: #222;
+    font-size: 1.2rem;
+    border-radius:5px ;
+    cursor: pointer;
+    margin-bottom: 2.5px;
+    &:hover{
+        background-color: #DCF256;
+        transition: all .3s ;
+    }
+}

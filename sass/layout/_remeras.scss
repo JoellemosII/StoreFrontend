@@ -1,0 +1,42 @@
+.general{
+    display: grid;
+    grid-template-columns: 5fr 1fr auto;
+    text-align: center;
+    padding: 10px;
+    p{font-size: 1.3rem;}
+}
+.picture img{
+    width: 680px;
+    height: 680px;
+}
+.detalle{
+    text-align: center;
+}
+.pagos{
+    display: grid;
+    grid-template-columns:repeat(5,25%) ;
+    grid-template-rows: 30px 30px;   
+    img{
+    width: 18px;
+    height: 20px;
+}
+}
+.info{
+    background-color: gray;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+h1 , h2{font-size: 1.3rem;}
+.talles{
+display: flex;
+}
+.colores{
+display: flex;
+}
+.cant{
+display: flex;
+}
