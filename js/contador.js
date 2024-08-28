@@ -7,6 +7,8 @@ function sumarUno(){
     document.querySelector("#msgcontador").innerHTML=contador;
 }
 function restarUno(){
+    if (contador > 0){
     contador=contador-1;
+    }
     document.querySelector("#msgcontador").innerHTML=contador;
 }

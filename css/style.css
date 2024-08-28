@@ -1,7 +1,26 @@
+@charset "UTF-8";
 /*Utilities*/
-/*Bases*/
+/* Configuracion para centrar los textos informativos como metodos de pago ...etc*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+.texto {
+  width: 50%;
+  margin: auto;
+  background-color: rgba(250, 233, 233, 0.733);
+  backdrop-filter: blur(7px);
+  text-align: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem; }
+  .texto h2, .texto h1, .texto b, .texto a {
+    font-size: 2rem; }
+  .texto a {
+    color: black; }
+
+#vaciar-carrito, #finalizar-compra {
+  font-size: 9px; }
+
+/*Bases*/
 * {
   margin: 0;
   padding: 0;
@@ -142,35 +161,152 @@ h3 {
   height: 680px; }
 
 .detalle {
-  text-align: center; }
+  text-align: center;
+  font-size: 2.5rem;
+  gap: 2rem; }
 
 .pagos {
   display: grid;
   grid-template-columns: repeat(5, 25%);
-  grid-template-rows: 30px 30px; }
+  grid-template-rows: 30px 30px;
+  padding-top: 18px;
+  padding-bottom: 18px; }
   .pagos img {
-    width: 18px;
+    width: 22px;
     height: 20px; }
 
 .info {
-  background-color: gray;
+  background-color: #e6e5dc;
   width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border: solid thin gray; }
 
 h1, h2 {
   font-size: 1.3rem; }
 
+p {
+  font-size: 2.5rem; }
+
 .talles {
-  display: flex; }
+  display: flex;
+  font-size: 3rem; }
+  .talles button {
+    width: 50px;
+    height: 35px;
+    background-color: white;
+    color: #1c1c1c;
+    border: solid thin #d4bbbb;
+    border-radius: 5px;
+    cursor: pointer; }
+    .talles button:hover {
+      background-color: #DCF256;
+      transition: all .3s; }
+
+button.seleccionado {
+  background-color: black;
+  color: white; }
+
+.talle {
+  padding-right: 8px; }
 
 .colores {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem; }
 
 .cant {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center; }
+  .cant i {
+    align-items: center;
+    font-size: 2rem;
+    color: gray;
+    padding-bottom: 25px; }
+
+.cantidades, .color {
+  padding-right: 15px; }
+
+.cero {
+  padding: 0 25px;
+  color: gray; }
+
+#resta {
+  padding-left: 5px; }
+
+#msgcontador {
+  font-size: 2rem; }
+
+.atras {
+  background-color: #74C3EF;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 100px; }
+  .atras a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size: 1.5rem; }
+    .atras a:hover {
+      background-color: #dcf256;
+      border-radius: 15px; }
+
+.color-palette {
   display: flex; }
+
+.color-swatch {
+  width: 30px;
+  /* Puedes ajustar el tamaño */
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  /* Espacio entre los colores */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid white;
+  /* Borde inicial transparente */
+  transition: border-color 0.3s ease;
+  /* Transición suave */ }
+
+.color-swatch input[type="radio"] {
+  opacity: 0;
+  /* Oculta el botón de radio */
+  position: absolute; }
+
+.color-swatch input[type="radio"]:checked + .color-swatch {
+  border-color: currentColor;
+  /* Cambia el borde al color actual */ }
+
+.black {
+  background-color: #000000;
+  color: #000000; }
+
+.dark-gray {
+  background-color: #A9A9A9;
+  color: #A9A9A9; }
+
+.light-gray {
+  background-color: #D3D3D3;
+  color: #D3D3D3; }
+
+.yellow {
+  background-color: #FFFF00;
+  color: #FFFF00; }
+
+.green {
+  background-color: #008000;
+  color: #008000; }
+
+.dark-green {
+  background-color: #006400;
+  color: #006400; }
 
 /*Components*/
 header {
@@ -192,7 +328,8 @@ header {
     color: #1c1c1c;
     font-size: 1.5rem; }
     .nav-list li a:hover {
-      background-color: #dcf256; }
+      background-color: #dcf256;
+      border-radius: 24px; }
 
 .abrir-menu,
 .cerrar-menu {

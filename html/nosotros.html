@@ -13,72 +13,113 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="../css/style.css">
         
     </head>
-    <header class="header">
-        <a href="/src/index.html">
+    <div class="contenedor">
+        <header>
+            <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
             <img class="logo" src="../img/Iconos/logo.png">
-        </a>
-    </header>
-        <nav class="barnav">
-            <ul>
-                <li><a class="navbar__enlace"  href="#">Sobre Nosotros</a></li>
-                <li class="enlace__derecha"><a class="navbar__enlace"  href="../index.html">Ir a Tienda</a></li>
-            </ul>
-        </nav>
-    </header>
-    <body>
-        <main>
-            <section class="contenido">
-                <div>
-                    <p>Lorem ipsum dolor sit amet c
-                        onsectetur. Non nulla commodo nulla fermentum
-                        fermentum suspendisse. In tristique nam quis non at in. Integer tempor scelerisque pharetra aug
-                        ue ornare vitae ultricies nunc tincidunt. Elementum condimentum nisl volutpat volutpat lorem pulvinar pretium accumsan.</p>
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <ul class="nav-list">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="../html/kids.html">Kids</a></li>
+                    <li><a href="../html/adultos.html">Adultos</a></li>
+                    <li><a href="../html/gift-card.html">Gift Card</a></li>
+                </ul>
+            </nav>
+            <div class="conteiner">
+                <nav id="carrito">
+                    <i class="bi bi-bag">
+                        <div class="buy-card">
+                            <ul class="nav-card">
+                                <li>Imagen</li>
+                                <li>Nombre</li>
+                                <li>Precio</li>
+                                <li>Cantidad</li>
+                                <li></li>
+                            </ul>
+                            <div class="lista-de-productos">
+                                
+                            </div>
+                            <button id="vaciar-carrito">Vaciar Carrito</button>
+                            <button>Finalizar Compra</button>
+                        </div>
+                    </i>
+                </nav>
+            </div>
+        </header>
+        <body>
+            <main>
+                <section>
+                    <div class="parrafo">
+                        <p>Lorem ipsum dolor sit amet c
+                            onsectetur. Non nulla commodo nulla fermentum
+                            fermentum suspendisse. In tristique nam quis non at in. Integer tempor scelerisque pharetra aug
+                            ue ornare vitae ultricies nunc tincidunt. Elementum condimentum nisl volutpat volutpat lorem pulvinar pretium accumsan.</p>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Cursus malesuada elementum nunc sit sed neque enim leo. Morbi 
+                            lorem odio ac at interdum integer consectetur amet vestibulum. Est sodales aliquam tortor donec varius et enim 
+                            libero in. Aenean feugiat tellus ultrices tincidunt bibendum nulla massa pharetra nulla. Nec eros lectus nunc 
+                            vitae aliquam blandit viverra vitae. Morbi pellentesque ligula interdum non leo fermentum morbi tellus condimentum.
+                            In eget ultrices neque sed gravida imperdiet et rhoncus sed. Amet placerat in pellentesque tempor gravida placerat 
+                            pulvinar tristique. Dignissim velit adipiscing pulvinar volutpat id ullamcorper venenatis leo. Neque proin aliquet 
+                            nunc volutpat eget. Augue enim risus rhoncus tempus eleifend. Nulla malesuada faucibus vitae adipiscing ut lacus. 
+                            Vitae ornare aenean ultrices.</p>
+                    </div>
+                    <div class="parrafo">
+                        <p>Lorem ipsum dolor sit amet consectetur. Cursus malesuada elementum nunc sit sed neque enim leo. Morbi 
+                            lorem odio ac at interdum integer consectetur amet vestibulum. Est sodales aliquam tortor donec varius et enim 
+                            libero in. Aenean feugiat tellus ultrices tincidunt bibendum nulla massa pharetra nulla. Nec eros lectus nunc 
+                            vitae aliquam blandit viverra vitae. Morbi pellentesque ligula interdum non leo fermentum morbi tellus condimentum.
+                            In eget ultrices neque sed gravida imperdiet et rhoncus sed. Amet placerat in pellentesque tempor gravida placerat 
+                            pulvinar tristique. Dignissim velit adipiscing pulvinar volutpat id ullamcorper venenatis leo. Neque proin aliquet 
+                            nunc volutpat eget. Augue enim risus rhoncus tempus eleifend. Nulla malesuada faucibus vitae adipiscing ut lacus. 
+                            Vitae ornare aenean ultrices.</p>
+                    </div>
+                    <div class="parrafo">
+                        <p>Lorem ipsum dolor sit amet consectetur. Cursus malesuada elementum nunc sit sed neque enim leo. Morbi 
+                            lorem odio ac at interdum integer consectetur amet vestibulum. Est sodales aliquam tortor donec varius et enim 
+                            libero in. Aenean feugiat tellus ultrices tincidunt bibendum nulla massa pharetra nulla. Nec eros lectus nunc 
+                            vitae aliquam blandit viverra vitae. Morbi pellentesque ligula interdum non leo fermentum morbi tellus condimentum.
+                            In eget ultrices neque sed gravida imperdiet et rhoncus sed. Amet placerat in pellentesque tempor gravida placerat 
+                            pulvinar tristique. Dignissim velit adipiscing pulvinar volutpat id ullamcorper venenatis leo. Neque proin aliquet 
+                            nunc volutpat eget. Augue enim risus rhoncus tempus eleifend. Nulla malesuada faucibus vitae adipiscing ut lacus. 
+                            Vitae ornare aenean ultrices.</p><br>
+                    </div><br>
+                </section><br>
+            </main>
+            <footer class="footer">
+                <div class="div-a">
+                    <h2>Sobre la Empresa</h2>
+                    <a href="../html/nosotros.html">Sobre Nosotros</a>
+                    <a href="../html/terminos.html">Terminos y Condiciones</a>
+                    <a href="../html/politica.html">Politica de privacidad</a>
                 </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur. Cursus malesuada elementum nunc sit sed neque enim leo. Morbi 
-                        lorem odio ac at interdum integer consectetur amet vestibulum. Est sodales aliquam tortor donec varius et enim 
-                        libero in. Aenean feugiat tellus ultrices tincidunt bibendum nulla massa pharetra nulla. Nec eros lectus nunc 
-                        vitae aliquam blandit viverra vitae. Morbi pellentesque ligula interdum non leo fermentum morbi tellus condimentum.
-                        In eget ultrices neque sed gravida imperdiet et rhoncus sed. Amet placerat in pellentesque tempor gravida placerat 
-                        pulvinar tristique. Dignissim velit adipiscing pulvinar volutpat id ullamcorper venenatis leo. Neque proin aliquet 
-                        nunc volutpat eget. Augue enim risus rhoncus tempus eleifend. Nulla malesuada faucibus vitae adipiscing ut lacus. 
-                        Vitae ornare aenean ultrices.</p>
+                <div class="div-b">
+                    <h2>Ayuda</h2>
+                    <a href="../html/envio.html">Costos de envios</a>
+                    <a href="../html/pago.html">Medios de pago</a>
+                    <a href="../html/talles.html">¿Cual es mi talle?</a>
                 </div>
-                <div class="parrafo">
-                    <p>Lorem ipsum dolor sit amet consectetur. Cursus malesuada elementum nunc sit sed neque enim leo. Morbi 
-                        lorem odio ac at interdum integer consectetur amet vestibulum. Est sodales aliquam tortor donec varius et enim 
-                        libero in. Aenean feugiat tellus ultrices tincidunt bibendum nulla massa pharetra nulla. Nec eros lectus nunc 
-                        vitae aliquam blandit viverra vitae. Morbi pellentesque ligula interdum non leo fermentum morbi tellus condimentum.
-                        In eget ultrices neque sed gravida imperdiet et rhoncus sed. Amet placerat in pellentesque tempor gravida placerat 
-                        pulvinar tristique. Dignissim velit adipiscing pulvinar volutpat id ullamcorper venenatis leo. Neque proin aliquet 
-                        nunc volutpat eget. Augue enim risus rhoncus tempus eleifend. Nulla malesuada faucibus vitae adipiscing ut lacus. 
-                        Vitae ornare aenean ultrices.</p>
+                <div class="div-c">
+                    <h2>Contactanos</h2>
+                    <a href="mailto:joel94master@gmail.com" target="_blank"><img class="iconos" src="../img/Iconos/correo-electronico.png" alt="correo electronico">Por Email</a>
+                    <a href="wa.link/836hj1" target="_blank"><img class="iconos" src="../img/Iconos/whatsapp.png" alt="whatsapp">Por Whatsapp</a>
                 </div>
-                <div class="parrafo">
-                    <p>Lorem ipsum dolor sit amet consectetur. Cursus malesuada elementum nunc sit sed neque enim leo. Morbi 
-                        lorem odio ac at interdum integer consectetur amet vestibulum. Est sodales aliquam tortor donec varius et enim 
-                        libero in. Aenean feugiat tellus ultrices tincidunt bibendum nulla massa pharetra nulla. Nec eros lectus nunc 
-                        vitae aliquam blandit viverra vitae. Morbi pellentesque ligula interdum non leo fermentum morbi tellus condimentum.
-                        In eget ultrices neque sed gravida imperdiet et rhoncus sed. Amet placerat in pellentesque tempor gravida placerat 
-                        pulvinar tristique. Dignissim velit adipiscing pulvinar volutpat id ullamcorper venenatis leo. Neque proin aliquet 
-                        nunc volutpat eget. Augue enim risus rhoncus tempus eleifend. Nulla malesuada faucibus vitae adipiscing ut lacus. 
-                        Vitae ornare aenean ultrices.</p><br>
-                </div><br>
-            </section><br>
-        </main>
-        <footer class="footer">
-            <p class="like" >@StoreFrontend</p>
-            <div >
-                <img class="iconos" src="../img/Iconos/tik-tok.png">
-                <img class="iconos" src="../img/Iconos/facebook.png">
-                <img class="iconos" src="../img/Iconos/instagram.png">
-                <img class="iconos" src="../img/Iconos/gorjeo.png">
-            </div> 
-            <p class="like" >Seguinos en todas nuestras redes sociales</p>
-            <p class="like" >@storeFrontend 2024. Todos los derechos reservados.</p>
-        </footer>
-        
+                <div class="div-d">
+                    <h2>Seguinos</h2>
+                    <img class="iconos" src="../img/Iconos/tik-tok.png" alt="Tik Tok">
+                    <img class="iconos" src="../img/Iconos/facebook.png" alt="Faebook">
+                    <img class="iconos" src="../img/Iconos/instagram.png" alt="Instagram">
+                    <img class="iconos" src="../img/Iconos/gorjeo.png" alt="Twitter">
+                    <p>@StoreFrontend</p>
+                </div>
+            </footer>
+        </body>
+    </div>
+
 </html>

@@ -15,7 +15,9 @@ header{
         text-decoration: none;
         color:#1c1c1c ;
         font-size: 1.5rem;
-        &:hover{background-color: #dcf256;}
+        &:hover{background-color: #dcf256;
+        border-radius: 24px;
+        }
     }
 }
 .abrir-menu ,

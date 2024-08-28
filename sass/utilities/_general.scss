@@ -1,1 +1,20 @@
-/* Configuracion par centrar los textos informativos como metodos de pago ...etc*/
+/* Configuracion para centrar los textos informativos como metodos de pago ...etc*/
+.texto{
+    width: 50%;
+    margin: auto;
+    background-color: rgba(250, 233, 233, 0.733);
+    backdrop-filter: blur(7px);
+    text-align: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    h2, h1 , b ,a{
+        font-size: 2rem;
+    }
+    a{
+        color: black;
+    }
+}
+#vaciar-carrito , #finalizar-compra{
+    font-size: 9px;
+}
