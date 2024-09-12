@@ -6,12 +6,16 @@
     button{
     display: none;
     }
+    button{
+        cursor: pointer;
+    }
 }
 .conteiner nav i:hover> .buy-card{
     width: 400px;
-    height: 400px;
+    height: 1500px;
     position: absolute;
     right: 0;
+    top: 6.9%;
     background-color: #fff;
 }
 .conteiner nav i:hover .buy-card >button{
@@ -36,6 +40,7 @@
     margin: 0 10px 0 10px;
     border: solid thin #fff;
 }
+
 .nav-card{
     display: none;
     li{
@@ -60,7 +65,6 @@
     padding: 10px 0 0 0 ;
     border-top: solid thin #e1e1e1;
     p{
-        /*border: solid thin red;*/
         width: 300px;
         font-size: 1.2rem;
         &:nth-child(4){
@@ -81,5 +85,4 @@
 
 .conteiner nav i:hover .buy-card >.lista-de-productos div{
     display: flex;
-
 }

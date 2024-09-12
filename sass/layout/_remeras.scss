@@ -143,35 +143,33 @@ font-size: 3rem;
 }
 
 
-.color-palette {
-    display: flex;
-  }
-  
-  .color-swatch {
-    width: 30px; /* Puedes ajustar el tamaño */
-    height: 30px;
-    border-radius: 50%;
-    margin-right: 5px; /* Espacio entre los colores */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 4px solid white; /* Borde inicial transparente */
-    transition: border-color 0.3s ease; /* Transición suave */
-  }
-  
-  .color-swatch input[type="radio"] {
-    opacity: 0; /* Oculta el botón de radio */
-    position: absolute;
-  }
-  
-  .color-swatch input[type="radio"]:checked + .color-swatch {
-    border-color: currentColor; /* Cambia el borde al color actual */
-  }
-  
-  .black { background-color: #000000; color: #000000; }
-  .dark-gray { background-color: #A9A9A9; color: #A9A9A9; }
-  .light-gray { background-color: #D3D3D3; color: #D3D3D3; }
-  .yellow { background-color: #FFFF00; color: #FFFF00; }
-  .green { background-color: #008000; color: #008000; }
-  .dark-green { background-color: #006400; color: #006400; }
-  
+    .color-palette {
+        display: flex;
+    }
+    
+    .color-swatch {
+        width: 30px; /* Puedes ajustar el tamaño */
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 5px; /* Espacio entre los colores */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 4px solid white; /* Borde inicial transparente */
+        transition: border-color 0.3s ease; /* Transición suave */
+    }
+    
+    .color-swatch input[type="radio"] {
+        opacity: 0; /* Oculta el botón de radio */
+        position: absolute;
+    }
+    
+    .color-swatch input[type="radio"]:checked + .color-swatch {
+        border-color: currentColor; /* Cambia el borde al color actual */
+    }
+    
+    .black { background-color: #000000; color: #000000; }
+    .red { background-color: red; color: red; }
+    .light-gray { background-color: #D3D3D3; color: #D3D3D3; }
+    .yellow { background-color: #FFFF00; color: #FFFF00; }
+    .green { background-color: #008000; color: #008000; }
