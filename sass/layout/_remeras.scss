@@ -2,12 +2,19 @@
     display: grid;
     grid-template-columns: 5fr 1fr auto;
     text-align: center;
+    justify-items: center;
     padding: 10px;
     p{font-size: 1.3rem;}
 }
 .picture img{
     width: 680px;
     height: 680px;
+    position: absolute;
+    left: 25%;
+}
+.atras{
+    position: absolute;
+    right: 94%;
 }
 .detalle{
     text-align: center;
@@ -26,17 +33,17 @@
 }
 }
 .info{
-    background-color: rgb(230, 229, 220);
+    background-color: rgb(255, 255, 255);
     width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: solid thin gray;
+    border: solid thin rgb(255, 252, 252);
 }
 h1 , h2{font-size: 1.3rem;}
-p{
-    font-size: 2.5rem;
+#pe{
+    font-size: 1.6rem;
 }
 .talles{
 display: flex;
@@ -68,42 +75,7 @@ justify-content: center;
 align-items: center;
 font-size: 3rem;
 }
-// /*colores de los colores*/
-// input[class="negro"]{
-//     accent-color: black;
-//     width: 29px;
-//     height: 29px;
-// }
-// input[class="azul"]{
-//     accent-color: blue;
-//     width: 29px;
-//     height: 29px;
-// }
-// input[class="amarillo"]{
-//     accent-color: yellow;
-//     width: 29px;
-//     height: 29px;
-// }
-// input[class="verde"]{
-//     accent-color:green;
-//     width: 29px;
-//     height: 29px;
-// }
-// input[class="rojo"]{
-//     accent-color:red;
-//     width: 29px;
-//     height: 29px;
-// }
-// input[class="gris"]{
-//     accent-color:grey;
-//     width: 29px;
-//     height: 29px;
-// }
-// input[class="marron"]{
-//     accent-color:#7f5345;
-//     width: 29px;
-//     height: 29px;
-// }
+
 .cant{
     display: flex;
     flex-direction: row;
@@ -142,7 +114,6 @@ font-size: 3rem;
     }
 }
 
-
     .color-palette {
         display: flex;
     }
@@ -158,7 +129,7 @@ font-size: 3rem;
         border: 4px solid white; /* Borde inicial transparente */
         transition: border-color 0.3s ease; /* Transición suave */
     }
-    
+
     .color-swatch input[type="radio"] {
         opacity: 0; /* Oculta el botón de radio */
         position: absolute;
@@ -167,9 +138,18 @@ font-size: 3rem;
     .color-swatch input[type="radio"]:checked + .color-swatch {
         border-color: currentColor; /* Cambia el borde al color actual */
     }
-    
+
     .black { background-color: #000000; color: #000000; }
     .red { background-color: red; color: red; }
     .light-gray { background-color: #D3D3D3; color: #D3D3D3; }
     .yellow { background-color: #FFFF00; color: #FFFF00; }
     .green { background-color: #008000; color: #008000; }
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.talle,.cantidades,.color{
+    font-size: 1.5rem;
+}

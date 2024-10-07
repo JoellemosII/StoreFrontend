@@ -25,16 +25,15 @@
                         <li><a id="enlace" href="./html/gift-card.html">Gift Card</a></li>
                     </ul>
                 </nav>
-                <!-- <nav class="busqueda">
-                    <input id="input-busqueda" type="search" placeholder="Buscar Productos">
-                    <div class="resultados-busqueda"></div> -->
-                </nav>
                 <div class="conteiner">
-
                     <nav id="carrito">
-                        <i class="bi bi-bag">
+                        <input type="text" id="buscador-input" placeholder="Buscar producto">
+                        <div id="resultados-busqueda"></div>
+                        <i class="bi bi-search" id="buscador"></i>
+                        <i class="bi bi-person-circle" id="login"></i>
+                        <i class="bi bi-bag"  id="bolsa-compra">
                             <div class="buy-card">
-                                <ul class="nav-card">
+                                <ul class="nav-card ">
                                     <li>Imagen</li>
                                     <li>Nombre</li>
                                     <li>Precio</li>
@@ -45,10 +44,18 @@
                                     
                                 </div>
                                 <button id="vaciar-carrito">Vaciar Carrito</button>
+                                
                                 <button id="finalizar-compra">Finalizar Compra</button>
+                                    <a href="./html/formulario.html"></a> 
                             </div>
                         </i>
                     </nav>
+                </div>
+                <div class="whatsapp-button">
+                    <a href="https://wa.link/p2mrxx" target="_blank">
+                        <img class="iconos" src="./img/Iconos/whatsapp.png" alt="whatsapp">
+                    </a>
+                    <span class="tooltip">Escribime Aqui</span>
                 </div>
             </header>
             <main class="grid" id="lista-producto">
@@ -69,7 +76,7 @@
                     <div class="div-c">
                         <h2>Contactanos</h2>
                         <a href="mailto:joel94master@gmail.com" target="_blank"><img class="iconos" src="./img/Iconos/correo-electronico.png" alt="correo electronico">Por Email</a>
-                        <a href="wa.link/836hj1" target="_blank"><img class="iconos" src="./img/Iconos/whatsapp.png" alt="whatsapp">Por Whatsapp</a>
+                        <a href="https://wa.link/p2mrxx" target="_blank"><img class="iconos" src="./img/Iconos/whatsapp.png" alt="whatsapp">Por Whatsapp</a>
                     </div>
                     <div class="div-d">
                         <h2>Seguinos</h2>
@@ -84,5 +91,6 @@
         <script src="./js/hamburguesa.js"></script>
         <script src="./js/carrito.js"></script>
         <script type="module" src="./js/card-home.js"></script>
+        <script src="./js/buscador.js"></script>
     </body>
 </html>

@@ -41,5 +41,7 @@ document.querySelectorAll('.color-swatch input[type="radio"]').forEach(radio => 
 });
 
 resetBorders();
+/**Click Carrito  */
+
 
 

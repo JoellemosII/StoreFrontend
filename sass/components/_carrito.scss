@@ -1,6 +1,7 @@
 .conteiner nav{
     display: flex;
     justify-content: end;
+    padding-top: 2rem;
     font-size: 2.5rem;
     cursor: pointer;
     button{
@@ -12,7 +13,7 @@
 }
 .conteiner nav i:hover> .buy-card{
     width: 400px;
-    height: 1500px;
+    height: 600px;
     position: absolute;
     right: 0;
     top: 6.9%;
@@ -86,3 +87,8 @@
 .conteiner nav i:hover .buy-card >.lista-de-productos div{
     display: flex;
 }
+
+#carrito  {
+    gap: 2rem;
+}
+

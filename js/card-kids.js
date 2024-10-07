@@ -10,8 +10,6 @@ const productosKids =[
     {id: 18 ,name:'Remera Rock',precio: 65.000, img:'../img/Kids/rock.png'},
 ];
 
-
-
 const listaKids =document.getElementById('lista-producto');
 
 productosKids.forEach(productos => {
@@ -20,9 +18,7 @@ productosKids.forEach(productos => {
 
     card.innerHTML = `
         <h3>${productos.name}</h3>
-        <a href="../html/${productos.name.toLowerCase().replace(' ', '-')}.html">
-            <img class="imagenes" src="${productos.img}" alt="${productos.name}">
-        </a>
+        <img class="imagenes" src="${productos.img}" alt="${productos.name}">
         <p class="price">$${productos.precio.toFixed(3)}</p>
         <button class="agregar-carrito" data-id="${productos.id}">Agregar Al Carrito</button>
     `;

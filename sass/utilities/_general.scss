@@ -18,3 +18,13 @@
 #vaciar-carrito , #finalizar-compra{
     font-size: 9px;
 }
+
+.parrafos > p{
+    font-size: 20px;
+}
+.general-talles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

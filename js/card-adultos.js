@@ -19,9 +19,7 @@ productosAdultos.forEach(productos => {
 
     card.innerHTML = `
         <h3>${productos.name}</h3>
-        <a href="../html/${productos.name.toLowerCase().replace(' ', '-')}.html">
-            <img class="imagenes" src="${productos.img}" alt="${productos.name}">
-        </a>
+        <img class="imagenes" src="${productos.img}" alt="${productos.name}">
         <p class="price">$${productos.precio.toFixed(3)}</p>
         <button class="agregar-carrito" data-id="${productos.id}">Agregar Al Carrito</button>
     `;
@@ -29,3 +27,10 @@ productosAdultos.forEach(productos => {
     listAdultos.appendChild(card);
 });
 
+async function obtenerProductos(){
+    const archivo = '/productos.json';
+    const resultado = await fetch(archivo);
+    const datos = await resultado.json();
+    console.log(datos)
+}
+obtenerProductos();

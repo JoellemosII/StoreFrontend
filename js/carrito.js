@@ -1,7 +1,8 @@
 const carrito = document.getElementById("carrito"),
     listaProducto =document.getElementById("lista-producto"),
     contenedorCarrito = document.querySelector('.buy-card .lista-de-productos'),
-    vaciarcarritoBtn = document.querySelector("#vaciar-carrito");
+    vaciarcarritoBtn = document.querySelector("#vaciar-carrito"),
+    finalizarCompraBtn = document.querySelector("#finalizar-compra");
 let articulosCarrito=[];
 
 registrarEventsListeners()
@@ -20,6 +21,8 @@ function registrarEventsListeners(){
         articulosCarrito =[];
         limpiarHTML()
     })
+
+    finalizarCompraBtn.addEventListener("click", finalizarCompra);
 }
 
 function agregarProducto(e){
@@ -27,6 +30,11 @@ if(e.target.classList.contains("agregar-carrito")){
     const productoSeleccionado = e.target.parentElement;
     leerInfo(productoSeleccionado);
 }
+}
+
+function finalizarCompra(e){
+    e.preventDefault();
+    window.location.href = "../html/formulario.html";
 }
 
 function eliminarProducto(e) {
